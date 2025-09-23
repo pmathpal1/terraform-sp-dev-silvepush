@@ -1,0 +1,33 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+.terraform/
+.terraform.lock.hcl
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ansible
+*.retry
+*.vault.yml
+*.vault.yaml
+*.vault.json
+*.secrets.yml
+*.secrets.yaml
+
+# SSH keys & certs
+*.pem
+*.key
+*.crt
+*.csr
+
+# Environment files
+.env
+.env.*
+*.secret
+secrets.yml
+secrets.yaml
