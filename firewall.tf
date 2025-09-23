@@ -838,14 +838,14 @@ resource "digitalocean_firewall" "test_firewall" {
     port_range       = "8080"
     source_addresses = ["0.0.0.0/0", "::/0"]  # Allow custom port from any IP
   }
-/*
+
   # Allow SSH (port 22) only from your public IPv4 address
   inbound_rule {
     protocol          = "tcp"
     port_range       = "22"
     source_addresses = ["106.219.152.219/32"]  # Your public IPv4 address
   }
-*/
+
   # Allow internal network traffic for UDP (if required)
   inbound_rule {
     protocol          = "udp"
